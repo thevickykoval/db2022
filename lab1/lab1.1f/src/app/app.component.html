@@ -1,0 +1,17 @@
+<div class="con">
+
+  <h1>Valuts</h1>
+    <a class="link" href="https://gitmind.com/app/flowchart/17a10945752">Diagram</a>
+  
+  <ul>
+    <li *ngFor="let valut of valutList" style="list-style-type: none">
+      <br>
+      <h4>{{valut.valuta}}</h4> <br> {{valut.count}}<br><br>
+      {{valut.country}}
+      <br><br>
+    </li>
+  </ul>
+  <br>
+  <button class="button1" (click)="getValuts()">Get valuts</button>
+  <br>
+  </div>
